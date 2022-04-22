@@ -1,3 +1,5 @@
+/* -------------------------Основные блоки----------------------------------------- */
+
 body {
   margin: 0;
   height: 7725px;
@@ -28,82 +30,11 @@ header {
   align-items: center;
 }
 
+/* ---------------------------Встроенные параметры тегов----------------------------- */
+
 A {
   text-decoration: none; 
   color: white;
-}
-
-h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 120%;
-  color: white;
-  margin: 0;
-}
-
-h2 {
-  font-family: "Poppins";
-  font-style: normal;
- /*  font-weight: 700; */
-  font-size: 40px;
- /*  line-height: 120%;
-  color: white; */
-  margin: 0;
-}
-
-h3 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
-  color: white;
-  margin: 0;
-}
-
-h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 38px;
-  color: white;
-  margin: 0;
-}
-
-h5 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 36px;
-  color: rgba(255, 255, 255, 0.5) ;
-  margin: 0;
-}
-
-h6 {
-  font-family: "Poppins";
-  font-style: normal;
-/*   font-weight: 500; */
-  font-size: 15px;
-/*   line-height: 30px; */
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0;
-}
-
-.logo-text {
-  position: relative;
-  top: 20px;
-  left: 124px;
-}
-
-.logo-text__purple {
-  position: relative;
-  left: -8px;
-  top: 20px;
-  color: #9c45f6 !important;
 }
 
 form {
@@ -141,6 +72,86 @@ button {
   border-radius: 10px;
 }
 
+img {
+  border-radius: 10px;
+}
+/* -----------------------------Шрифты---------------------------------------------- */
+
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700; 
+  font-size: 40px;
+  line-height: 120%;
+  color: white;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: white;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: white;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.5) ;
+  margin: 0;
+}
+
+h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* ----------------------------HEADER--------------------------------------------- */
+
+.logo-text {
+  position: relative;
+  top: 20px;
+  left: 124px;
+}
+
+.logo-text__purple {
+  position: relative;
+  left: -8px;
+  top: 20px;
+  color: #9c45f6 !important;
+}
+
 .search {
   position: relative;
   width: 300px; 
@@ -150,7 +161,7 @@ button {
   margin: 0;
 }
 
-.frame-2 {
+.header__actions {
  position:relative;
   width: 522PX;
   height: 70px;
@@ -230,7 +241,9 @@ button {
   flex-grow: 0;
 } 
 
- .home {
+/* -------------------------------HOME------------------------------------- */
+
+.home {
   position: relative;
   width: 1440px;
   height: 600px;
@@ -243,7 +256,7 @@ button {
   align-items: center;
 }
 
-.home-message {
+.home__message {
   position:relative;
   width: 490px;
   height: 457px;
@@ -288,7 +301,7 @@ button {
   width: 121px;
   height: 33px;
   padding: 9px 20px;
-  border: 0;
+  border: none;
   border-radius: 10px;
   background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
 
@@ -399,6 +412,8 @@ button {
   gap: 15px
 }
 
+/* ------------------------------SPONSORED------------------------------------------ */
+
 .sponsored {
   width: 1194px;
   height: 247px;
@@ -408,4 +423,244 @@ button {
   justify-content: start;
   align-items: flex-end;
   gap: 165px;
+}
+
+/* ----------------------------------ABOUT US--------------------------------------- */
+
+.about {
+  width: 1197px;
+  height: 897px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about__title {
+  width: fit-content;
+  height: 17px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700; 
+  font-size: 40px;
+  line-height: 17px;
+  color: white;
+  margin: 150px 0px 0px;
+}
+
+.about__title__comment {
+  width: fit-content;
+  height: 48px;
+  margin: 25px 0px 40px;
+  text-align: center;
+  line-height: 150% !important;
+}
+
+.about__information {
+  width: 1197px;
+  height: 604px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 120px;
+}
+
+.about__information__message {
+  width: 587px;
+  height: 604px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about__information__message__link {
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 22px;
+  border: none;
+  margin: 18px 0px 0px;
+  border-radius: 10px;
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+/* ----------------------------------COLLECTION--------------------------------------- */
+
+.collection {
+  width: 1197px;
+  height: 1100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.collection__title {
+  width: 237px;
+  height: 60px;
+  margin: 198px 0px 0px 42px;
+
+  line-height: 60px !important;
+}
+
+.collection__comment {
+  width: 423px;
+  height: 60px;
+  margin: 10px 0px 30px 40px;
+  line-height: 30px !important;
+  text-align: center;
+}
+
+.collection__category {
+  width: 1197px;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection__link {
+  box-sizing: border-box;
+  width: 288px;
+  height: 40px;
+  padding: auto;
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.collection__link2 {
+  box-sizing: border-box;
+  width: 288px;
+  height: 40px;
+  padding: auto;
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.collection__collect {
+  width: 1197px;
+  height: 1815px;
+  margin: 32px 0px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection__column {
+  width: 389px;
+  height: 1815px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+
+.collection__card {
+  width: 389px;
+  height: 595px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.collection__card__image {
+  position: relative;
+  width: 337px;
+  height: 380px;
+  top: 25px;
+  left: 26px;
+  border-radius: 10px;
+}
+
+.collection__card__johny {
+  position: relative;
+  width: 83px;
+  height: 30px;
+  top: 37px;
+  left: 28px;
+}
+
+.collection__card__yel-painting {
+  position: relative;
+  width: 159px;
+  height: 30px;
+  top: 46px;
+  left: 28px;
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.collection__card__bid {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  top: 0px;
+  left: 265px;
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.collection__card__current-bid {
+  position: relative;
+  width: 85px;
+  height: 23px;
+  top: -48px;
+  left: 280px;
+}
+
+.collection__card__place-a-bid {
+  position: relative;
+  width: 112px;
+  height: 30px;
+  padding: 6px 113px 14px;
+  border-radius: 10px;
+  top: 22px;
+  left: 26px;
+  text-align: center;
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.collection__card2 {
+  width: 389px;
+  height: 595px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.collection__card2__place-a-bid {
+  position: relative;
+  width: 112px;
+  height: 30px;
+  padding: 6px 113px 14px;
+
+  border-radius: 10px;
+  top: 22px;
+  left: 26px;
+  text-align: center;
+  
+  border: 2px solif black; /* Черным сделал,чтобы пока что видеть,что он есть */
+
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
